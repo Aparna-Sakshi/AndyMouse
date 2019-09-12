@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88aa88"
+    tools:context=".MainActivity" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp">
+
+
+        <TextView
+            android:id="@+id/textView_sensor_X_acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_margin="10dp"
+            android:background="#fffa"
+            android:padding="10dp"
+            android:text="x accelerometer"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/textView_sensor_Y_acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_margin="10dp"
+            android:background="#fffa"
+            android:padding="10dp"
+            android:text="y accelerometer"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/textView_sensor_Z_acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_margin="10dp"
+            android:background="#fffa"
+            android:padding="10dp"
+            android:text="z accelerometer"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/textView_sensor_X_gyro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_margin="10dp"
+            android:background="#fffa"
+            android:padding="10dp"
+            android:text="x gyroscope"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/textView_sensor_Y_gyro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_margin="10dp"
+            android:background="#fffa"
+            android:padding="10dp"
+            android:text="y gyroscope"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/textView_sensor_Z_gyro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_margin="10dp"
+            android:background="#fffa"
+            android:padding="10dp"
+            android:text="z gyroscope"
+            android:textSize="14sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:background="#00dd88"
+                android:padding="20dp"
+                android:text="START"
+                android:textSize="13sp"
+                android:onClick="onStart"/>
+            <Button
+                android:id="@+id/button_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:background="#55ff"
+                android:padding="20dp"
+                android:text="SEND"
+                android:textSize="15sp"
+                android:onClick="send"/>
+            <Button
+                android:id="@+id/button_stop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:background="#ffb7"
+                android:padding="20dp"
+                android:text="STOP"
+                android:textSize="15sp"
+                android:onClick="onStop"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
