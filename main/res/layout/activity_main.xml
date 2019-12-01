@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#88aa88"
+    android:background="#f1f1f1"
     tools:context=".MainActivity" >
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="50dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginRight="20dp">
+        android:layout_marginRight="20dp"
+
+        android:orientation="vertical">
 
 
         <TextView
@@ -23,10 +24,12 @@
             android:layout_alignParentLeft="false"
             android:layout_alignParentTop="false"
             android:layout_margin="10dp"
-            android:background="#fffa"
-            android:padding="10dp"
-            android:text="x accelerometer"
-            android:textSize="14sp"/>
+            android:background="#f39c12"
+            android:padding="20dp"
+            android:hint="x accelerometer"
+            android:text="0.00"
+            android:textSize="14sp" />
+
         <TextView
             android:id="@+id/textView_sensor_Y_acc"
             android:layout_width="match_parent"
@@ -34,10 +37,12 @@
             android:layout_alignParentLeft="false"
             android:layout_alignParentTop="false"
             android:layout_margin="10dp"
-            android:background="#fffa"
-            android:padding="10dp"
-            android:text="y accelerometer"
-            android:textSize="14sp"/>
+            android:background= "#f39c12"
+            android:padding="20dp"
+            android:hint="y accelerometer"
+            android:text="0.00"
+            android:textSize="14sp" />
+
         <TextView
             android:id="@+id/textView_sensor_Z_acc"
             android:layout_width="match_parent"
@@ -45,90 +50,100 @@
             android:layout_alignParentLeft="false"
             android:layout_alignParentTop="false"
             android:layout_margin="10dp"
-            android:background="#fffa"
-            android:padding="10dp"
-            android:text="z accelerometer"
-            android:textSize="14sp"/>
-        <TextView
-            android:id="@+id/textView_sensor_X_gyro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="false"
-            android:layout_alignParentTop="false"
-            android:layout_margin="10dp"
-            android:background="#fffa"
-            android:padding="10dp"
-            android:text="x gyroscope"
-            android:textSize="14sp"/>
-        <TextView
-            android:id="@+id/textView_sensor_Y_gyro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="false"
-            android:layout_alignParentTop="false"
-            android:layout_margin="10dp"
-            android:background="#fffa"
-            android:padding="10dp"
-            android:text="y gyroscope"
-            android:textSize="14sp"/>
-        <TextView
-            android:id="@+id/textView_sensor_Z_gyro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="false"
-            android:layout_alignParentTop="false"
-            android:layout_margin="10dp"
-            android:background="#fffa"
-            android:padding="10dp"
-            android:text="z gyroscope"
-            android:textSize="14sp"/>
+            android:background="#f39c12"
+            android:padding="20dp"
+            android:hint="z accelerometer"
+            android:text="0.00"
+            android:textSize="14sp" />
+
+
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp">
+
             <Button
                 android:id="@+id/button_start"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="false"
                 android:layout_alignParentRight="true"
                 android:layout_margin="10dp"
-                android:background="#00dd88"
+                android:layout_weight="1"
+                android:background="#57d272"
+                android:onClick="onStart"
                 android:padding="20dp"
                 android:text="START"
-                android:textSize="13sp"
-                android:onClick="onStart"/>
-            <Button
-                android:id="@+id/button_send"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="false"
-                android:layout_alignParentRight="true"
-                android:layout_margin="10dp"
-                android:background="#55ff"
-                android:padding="20dp"
-                android:text="SEND"
-                android:textSize="15sp"
-                android:onClick="send"/>
+                android:textSize="13sp" />
+
+
             <Button
                 android:id="@+id/button_stop"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="false"
                 android:layout_alignParentRight="true"
                 android:layout_margin="10dp"
-                android:background="#ffb7"
+                android:layout_weight="1"
+                android:background="#e94f64"
+                android:onClick="onStop"
                 android:padding="20dp"
                 android:text="STOP"
-                android:textSize="15sp"
-                android:onClick="onStop"/>
+                android:textSize="15sp" />
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="#00BCD4"
+                android:onClick="leftClick"
+                android:padding="20dp"
+                android:text="back"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="#00BCD4"
+                android:onClick="rightClick"
+                android:padding="20dp"
+                android:text="next"
+                android:textSize="13sp" />
+
+
+
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/ip_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="left"
+            android:hint="Enter IP Address" />
+
+
     </LinearLayout>
 
 
